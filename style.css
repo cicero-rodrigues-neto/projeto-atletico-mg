@@ -1,0 +1,261 @@
+ * {
+     box-sizing: border-box;
+ }
+
+ body{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+.cabecalho {
+    background-color: rgba(0, 0, 0, 0.973);
+    border-bottom: solid 5px rgba(224, 224, 224, 0.699);
+    height: 80px;
+    box-sizing: content-box;
+    text-align: center;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.link-logo {
+    text-decoration: none;
+}
+
+.logo {
+    display: inline-block;
+    height: 80px;
+}
+
+.logo img {
+    height: 100%;
+    padding: 10px;
+}
+
+.navegacao {
+    display: inline-block;
+    vertical-align: top;
+    height: 70px;
+    padding: 25px;
+    display: inline-block;
+    text-align: center;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navegacao ul {
+margin: 0;
+padding: 0;
+}
+
+.navegacao li {
+    display: inline-block;
+}
+
+.navegacao li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.4em;
+    padding: 15px;
+}
+
+li a:hover {
+    background-color: rgb(255, 255, 255);
+    color: black;
+    font-weight: bold;
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0px 3px 3px rgba(172, 170, 170, 0.473);
+}
+
+    @media (max-width:730px) 
+    { 
+        .navegacao {display:none;}
+    }
+
+    .home {
+        background-image: url("assets/home.jpeg");
+        background-position: center;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        height: 600px;
+        font-size: 2.5em;
+        text-align: center;
+        border-style: solid rgba(122, 122, 122, 0.274);
+    }
+
+    .home-text {
+        background-color: #ffd900;
+        letter-spacing: 8px;
+        word-spacing: 10px;
+        font-size: 25px;
+        color: rgb(0, 0, 0);
+        font-weight: 400;
+        box-shadow: 0px 3px 9px rgba(5, 5, 5, 0.397) ;
+        margin: 0;
+        font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    
+
+
+.fundacao-historia {
+    text-align: center;
+    font-size:40px ;
+    margin-top: 50px;
+}
+
+.estrutura {
+    background-color: rgb(255, 255, 255);
+}
+
+.estrutura-text {
+    text-align: center;
+    font-size:40px ;
+    margin-top: 60px;
+}
+
+.estruturaContainer {
+    float: left;
+    width: 32%;
+    text-align: center;
+    padding: 2px;
+    margin: 0 5px;
+    height: 550px;
+    background-color: rgb(211, 211, 211);
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.349);
+}
+
+.estrutura:after {
+    content:"" ;
+    display: table;
+    clear: both;
+}
+  
+@media screen and (max-width: 600px) {
+    .estruturaContainer {
+        width: 100%;
+    }
+}
+
+.fundacao {
+    align-content: flex-start;
+    align-items: flex-start;
+    
+}
+
+.fundacao img {
+    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.estruturaContainer {
+flex: 1 200px;
+}
+
+.estruturaContainer:nth-last-of-type(3) {
+flex: 2 200px;
+}
+
+.contatos {
+    /*display: inline-block;*/
+    width: 100%;
+    border: 10px white;
+    margin-top: 20px;
+}
+
+.contatos-text {
+    text-align: center;
+    font-size:40px ;
+}
+
+.fale-conosco {
+    border: 5px white;
+    height: 50%;
+    float: left;
+}
+
+.links {
+    color: rgb(255, 255, 255);
+    height: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    border: 5px black;
+    padding: 10px;
+}
+
+.links .fale-conosco {
+    display: inline-table;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+
+iframe {
+    float: right;
+    width: 4000px;
+}
+
+#type-digite {
+    width: 250px;
+    height: 150px;
+}
+
+.contatos p a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.enviar {
+    border-radius: 10px 10px 10px 10px;
+    background-color: rgba(0, 0, 0, 0.616);
+    color: rgb(255, 255, 255);
+    width: 60px;
+    height: 45px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+footer {
+    height: 170px;
+    align-items: center;
+    text-align: center;
+}
+
+.rodape {
+    background-color:  rgb(0, 0, 0);       
+    clear: both;
+    padding: 28px;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    font-family: "arial", sans-serif;
+}
+
+.icones-sociais li
+{
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+
+.icones-sociais li a {
+    position: relative;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 2em;
+    background-color: #000000;
+}
+
+.icones-sociais li:hover a {
+    font-size: 3em;
+}
+
+
+
+
+
+
+
+
+
