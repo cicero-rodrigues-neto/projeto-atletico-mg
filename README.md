@@ -1,2 +1,3 @@
 # projeto-atletico-mg
-Site Clube Atletico Mineiro
+
+Mostrando um pouco da estrutura e da historia do Clube Atletico Mineiro.
